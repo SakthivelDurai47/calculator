@@ -38,7 +38,7 @@ button:active {
   border: 3px solid #eb5b00;
 }
 .operator {
-  background-color: #eb5b00;
+  background-color: #eb5a00ee;
 }
 .operator:hover {
   background-color: rgba(235, 91, 0, 0.3);
@@ -62,7 +62,7 @@ button:active {
   margin-bottom: 15px;
   border: none;
   background-color: rgba(137, 137, 137, 0.642);
-  color: rgb(13, 13, 15);
+  color: white;
   font-size: 38px;
   letter-spacing: 4px;
   padding: 10px;

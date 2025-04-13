@@ -24,9 +24,10 @@ function clearDisplay() {
 }
 
 function removeFromDisplay() {
-  if (preValue.length >= 1) {
-    display.value = preValue[preValue.length - 1];
+  if (preValue.length > 1) {
     preValue.pop();
+    display.value = preValue[preValue.length - 1];
+    console.log(preValue);
   }
 }
 

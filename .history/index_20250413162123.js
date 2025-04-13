@@ -27,6 +27,7 @@ function removeFromDisplay() {
   if (preValue.length >= 1) {
     display.value = preValue[preValue.length - 1];
     preValue.pop();
+    console.log(preValue);
   }
 }
 
