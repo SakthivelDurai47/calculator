@@ -9,18 +9,18 @@ body {
 #buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
+  gap: 5px;
   align-items: center;
   justify-items: center;
 }
 button {
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
   border: none;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  font-size: larger;
+  font-size: large;
   font-weight: bold;
   margin: 3px;
   margin-left: 10px;
@@ -58,12 +58,12 @@ button:active {
 }
 #display {
   width: 100%;
-  height: 80px;
+  height: 70px;
   margin-bottom: 15px;
   border: none;
   background-color: rgba(137, 137, 137, 0.642);
   color: rgb(13, 13, 15);
-  font-size: 35px;
+  font-size: 38px;
   letter-spacing: 4px;
   padding: 10px;
   border-bottom: 3px solid black;
