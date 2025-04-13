@@ -67,7 +67,6 @@ button:active {
   letter-spacing: 4px;
   padding: 10px;
   border-bottom: 3px solid black;
-  box-sizing: border-box;
 }
 
 .result {

@@ -2,15 +2,17 @@ const display = document.getElementById("display");
 let preValue = [""];
 let errors = false;
 
+display.addEventListener("input", () => {
+  display.scrollLeft = display.scrollWidth;
+});
+
 function addToDisplay(input) {
-  playClickSound();
   if (!errors) {
-    if (display.value === "0") {
+    if (display.value == 0) {
       display.value = "";
     }
     display.value += input;
     preValue.push(display.value);
-    display.scrollLeft = display.scrollWidth + 20;
   } else {
     display.value = "";
     preValue = [""];
@@ -20,14 +22,12 @@ function addToDisplay(input) {
 }
 
 function clearDisplay() {
-  playClickSound();
   display.value = "";
   preValue = [""];
   errors = false;
 }
 
 function removeFromDisplay() {
-  playClickSound();
   if (preValue.length >= 1) {
     display.value = preValue[preValue.length - 1];
     preValue.pop();
@@ -35,7 +35,6 @@ function removeFromDisplay() {
 }
 
 function calculate() {
-  playClickSound();
   try {
     display.value = eval(display.value);
     if (display.value == Infinity) {
@@ -45,9 +44,4 @@ function calculate() {
     display.value = "error";
     errors = true;
   }
-}
-function playClickSound() {
-  const clickSound = document.getElementById("clickSound");
-  clickSound.currentTime = 0;
-  clickSound.play();
 }

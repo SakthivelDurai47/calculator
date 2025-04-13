@@ -20,14 +20,12 @@ function addToDisplay(input) {
 }
 
 function clearDisplay() {
-  playClickSound();
   display.value = "";
   preValue = [""];
   errors = false;
 }
 
 function removeFromDisplay() {
-  playClickSound();
   if (preValue.length >= 1) {
     display.value = preValue[preValue.length - 1];
     preValue.pop();
@@ -35,7 +33,6 @@ function removeFromDisplay() {
 }
 
 function calculate() {
-  playClickSound();
   try {
     display.value = eval(display.value);
     if (display.value == Infinity) {

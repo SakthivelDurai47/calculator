@@ -35,7 +35,6 @@ function removeFromDisplay() {
 }
 
 function calculate() {
-  playClickSound();
   try {
     display.value = eval(display.value);
     if (display.value == Infinity) {
