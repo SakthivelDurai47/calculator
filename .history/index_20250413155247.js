@@ -31,9 +31,6 @@ function removeFromDisplay() {
 function calculate() {
   try {
     display.value = eval(display.value);
-    if (display.value == Infinity) {
-      throw new Error();
-    }
   } catch (error) {
     display.value = "error";
     errors = true;

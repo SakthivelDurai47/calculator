@@ -1,0 +1,14 @@
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+button {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+#

@@ -4,7 +4,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(227, 227, 227);
 }
 #buttons {
   display: grid;

@@ -8,9 +8,8 @@ function addToDisplay(input) {
     preValue.push(display.value);
   } else {
     display.value = "";
-    preValue = [""];
     errors = false;
-    addToDisplay(input);
+    display.value += input;
   }
 }
 
@@ -21,9 +20,9 @@ function clearDisplay() {
 }
 
 function removeFromDisplay() {
-  if (preValue.length > 1) {
-    preValue.pop();
+  if (preValue.length > 0) {
     display.value = preValue[preValue.length - 1];
+    preValue.pop();
     console.log(preValue);
   }
 }
@@ -31,9 +30,6 @@ function removeFromDisplay() {
 function calculate() {
   try {
     display.value = eval(display.value);
-    if (display.value == Infinity) {
-      throw new Error();
-    }
   } catch (error) {
     display.value = "error";
     errors = true;

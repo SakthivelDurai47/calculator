@@ -4,7 +4,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(227, 227, 227);
 }
 #buttons {
   display: grid;
@@ -40,10 +39,10 @@ button:active {
   background-color: orangered;
 }
 .operator:hover {
-  background-color: rgba(255, 68, 0, 0.3);
+  background-color: rgba(255, 114, 63, 0.564);
 }
 .operator:active {
-  background-color: rgba(255, 68, 0, 0.1);
+  background-color: rgba(252, 149, 112, 0.128);
 }
 #calculator {
   width: 400px;
